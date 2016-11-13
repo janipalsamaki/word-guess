@@ -27,13 +27,6 @@ li {
   background-color: #5F4B01;
 }
 
-#game-result {
-  color: #5F4B01;
-  background-color: #F9E8A8;
-  padding: 1em;
-  cursor: pointer;
-}
-
 #alphabet li {
   cursor: pointer;
 }
@@ -68,5 +61,12 @@ li {
   color: #5F4B01;
   background-color: #F9E8A8;
   text-align: center;
-  margin-top: 1em;
+  margin: 1em 0 1em 0;
+}
+
+#game-result {
+  color: #5F4B01;
+  background-color: #F9E8A8;
+  padding: 1em;
+  cursor: pointer;
 }

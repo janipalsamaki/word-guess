@@ -88,13 +88,13 @@ function updateGameStatus(letter) {
   const guessed = wordLetters.every(letter => guessedLetters.has(letter));
 
   if (guessed) {
-    appContainer().innerHTML = '<div id="game-result" onclick="window.location.reload();">:-)</div>' + appContainer().innerHTML;
+    appContainer().innerHTML += '<div id="game-result" onclick="window.location.reload();">:-)</div>';
   } else if (!alreadyGuessedLetter && !wordLetters.includes(letter)) {
     guessesLeft--;
     document.querySelector('#guesses').innerHTML = String(guessesLeft);
 
     if (guessesLeft === 0) {
-      appContainer().innerHTML = '<div id="game-result" onclick="window.location.reload();">:-(</div>' + appContainer().innerHTML;
+      appContainer().innerHTML += '<div id="game-result" onclick="window.location.reload();">:-(</div>';
     }
   }
 }
