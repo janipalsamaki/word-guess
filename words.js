@@ -17,6 +17,10 @@ const words = [
   },
   {
     category: 'Metsäneläimet',
-    words: ['Karhu','Susi','Kettu','Hirvi','Peura','Orava','Jänis','Pöllö']
+    words: ['Karhu','Susi','Kettu','Hirvi','Peura','Orava','Jänis','Pöllö','Siili','Hiiri','Myyrä','Liito-orava']
+  },
+  {
+    category: 'Kalat',
+    words: ['Made','Särki','Ahven','Muikku','Taimen','Hauki','Siika','Lohi','Silakka','Kirjolohi','Harjus','Kampela','Lahna','Kiiski','Kuha']
   },
 ];
