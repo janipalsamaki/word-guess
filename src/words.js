@@ -31,4 +31,10 @@ const words = [
     category: 'Ruuat',
     words: ['Makaronilaatikko','Lasagne','Pizza','Lihapullat','Kalakeitto','Pinaattikeitto','Pinaattiletut','Siskonmakkarakeitto','Poronkäristys','Lihakeitto','Kanakeitto','Pasta']
   },
+  {
+    category: 'Afrikan eläimet',
+    words: ['Leijona','Kameli','Norsu','Kirahvi','Seepra','Sarvikuono','Virtahepo','Antilooppi','Hyeena','Gebardi','Skorpioni','Paviaani','Gorilla','Simpanssi','Kuristajakäärme']
+  },
 ];
+
+export default words;

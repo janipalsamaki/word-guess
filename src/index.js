@@ -1,3 +1,5 @@
+import words from './words';
+
 const maxGuesses = 5;
 let guessesLeft = maxGuesses;
 const category = randomCategory();
@@ -8,8 +10,8 @@ const guessedLetters = new Set();
 function randomCategory() {
   let categories = [];
 
-  for (entry of words.entries()) {
-    [index, object] = entry;
+  for (const entry of words.entries()) {
+    let [index, object] = entry;
     categories.push(object);
   }
 
