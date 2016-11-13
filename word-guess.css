@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: xx-large;
+  text-align: center;
+}
+
+body {
+  padding: 1em;
+  background-color: #AC953B;
+  font-size: larger;
+}
+
+li {
+  border-radius: 10%;
+  padding: 1em;
+  margin: 0.2em;
+  height: 1em;
+  width: 1em;
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  background-color: #5F4B01;
+}
+
+#game-result {
+  color: #5F4B01;
+  background-color: #F9E8A8;
+  padding: 1em;
+  cursor: pointer;
+}
+
+#alphabet li {
+  cursor: pointer;
+}
+
+#alphabet li[disabled] {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+#category {
+  text-transform: uppercase;
+  color: white;
+  padding: 1em;
+}
+
+#word li {
+  color: transparent;
+  background-color: transparent;
+  border: solid #5F4B01;
+  border-width: 0 0 0.2em 0;
+  border-radius: 0;
+  cursor: default;
+  padding: 0.2em;
+}
+
+#word li[disabled] {
+  color: #5F4B01;
+}
+
+#guesses {
+  padding: 1em;
+  color: #5F4B01;
+  background-color: #F9E8A8;
+  text-align: center;
+  margin-top: 1em;
+}
