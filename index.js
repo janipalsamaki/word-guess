@@ -94,7 +94,7 @@ function updateGameStatus(letter) {
     document.querySelector('#guesses').innerHTML = String(guessesLeft);
 
     if (guessesLeft === 0) {
-      appContainer().innerHTML = '<div id="game-result" onclick="window.location.reload();>:-(</div>' + appContainer().innerHTML;
+      appContainer().innerHTML = '<div id="game-result" onclick="window.location.reload();">:-(</div>' + appContainer().innerHTML;
     }
   }
 }
