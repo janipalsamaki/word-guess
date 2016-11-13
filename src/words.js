@@ -35,6 +35,18 @@ const words = [
     category: 'Afrikan eläimet',
     words: ['Leijona','Kameli','Norsu','Kirahvi','Seepra','Sarvikuono','Virtahepo','Antilooppi','Hyeena','Gebardi','Skorpioni','Paviaani','Gorilla','Simpanssi','Kuristajakäärme']
   },
+  {
+    category: 'Juomat',
+    words: ['Limonadi','Mansikkamehu','Omenamehu','Vesi','Maito','Piimä','Appelsiinimehu','Ananasmehu','Kivennäisvesi','Olut','Viski','Rommi','Kotikalja']
+  },
+  {
+    category: 'Huonekalut',
+    words: ['Pöytä','Sohva','Tuoli','Sänky','Kirjahylly','Lipasto','Nojatuoli']
+  },
+  {
+    category: 'Puut',
+    words: ['Kuusi','Mänty','Koivu','Vaahtera','Tammi','Haapa','Pihlaja','Saarni','Tuomi']
+  },
 ];
 
 export default words;
