@@ -23,4 +23,12 @@ const words = [
     category: 'Kalat',
     words: ['Made','Särki','Ahven','Muikku','Taimen','Hauki','Siika','Lohi','Silakka','Kirjolohi','Harjus','Kampela','Lahna','Kiiski','Kuha']
   },
+  {
+    category: 'Kukat',
+    words: ['Orkidea','Päivänkakkara','Kielo','Ruusu','Kissankello','Voikukka','Leskenlehti','Tulppaani','Sinivuokko','Valkovuokko','Keltavuokko','Apila','Narsissi','Lupiini']
+  },
+  {
+    category: 'Ruuat',
+    words: ['Makaronilaatikko','Lasagne','Pizza','Lihapullat','Kalakeitto','Pinaattikeitto','Pinaattiletut','Siskonmakkarakeitto','Poronkäristys','Lihakeitto','Kanakeitto','Pasta']
+  },
 ];
