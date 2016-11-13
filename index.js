@@ -1,4 +1,4 @@
-const maxGuesses = 10;
+const maxGuesses = 5;
 let guessesLeft = maxGuesses;
 const category = randomCategory();
 const word = randomWord(category);
@@ -20,7 +20,7 @@ function randomWord(category) {
   return category.words[Math.floor(Math.random() * category.words.length)].toUpperCase();
 }
 
-hangman({word, maxGuesses: 5});
+hangman({word, maxGuesses: maxGuesses});
 
 function hangman({word, maxGuesses = 5}) {
   const components = [
@@ -79,12 +79,17 @@ function letterClickListener(element) {
 }
 
 function updateGameStatus(letter) {
-  guessedLetters.add(letter);
+  const alreadyGuessedLetter = guessedLetters.has(letter);
+
+  if (!alreadyGuessedLetter) {
+    guessedLetters.add(letter);
+  }
+
   const guessed = wordLetters.every(letter => guessedLetters.has(letter));
 
   if (guessed) {
     appContainer().innerHTML = '<div id="game-result" onclick="window.location.reload();">:-)</div>' + appContainer().innerHTML;
-  } else if (!wordLetters.includes(letter)) {
+  } else if (!alreadyGuessedLetter && !wordLetters.includes(letter)) {
     guessesLeft--;
     document.querySelector('#guesses').innerHTML = String(guessesLeft);
 
