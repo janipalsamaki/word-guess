@@ -55,6 +55,10 @@ const words = [
     category: 'Urheilulajit',
     words: ['Jalkapallo','Koripallo','Käsipallo','Lentopallo','Jääkiekko','Keihäänheitto','Salibandy','Kiekonheitto','Taitoluistelu','Mäkihyppy','Triathlon']
   },
+  {
+    category: 'Star Wars -hahmot',
+    words: ['Jango Fett','Boba Fett','Anakin Skywalker','Luke Skywalker','Han Solo','Chewbacca','C-3PO','Darth Maul','Jabba the Hutt','Jar Jar Binks','Obi-Wan Kenobi','R2-D2','BB-8','Yoda','Finn','Kylo Ren']
+  },
 ];
 
 export default words;
