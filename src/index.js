@@ -55,7 +55,13 @@ function wordComponent(word) {
     <div id="word">
       <ul>
         ${word.split('').map(letter => {
-          return letter === '-' ? `<li disabled="disabled">${letter}</li>` : `<li class="${letter}">${letter}</li>`
+          if (letter === '-') {
+            return `<li disabled="disabled">${letter}</li>`;
+          } else if (letter === ' ') {
+            return `<li class="space" disabled="disabled">&nbsp;</li>`;
+          } else {
+            return `<li class="${letter}">${letter}</li>`;
+          }
         }).join('')}  
       </ul>
     </div>`;
@@ -89,7 +95,7 @@ function updateGameStatus(letter) {
     guessedLetters.add(letter);
   }
 
-  const guessed = wordLetters.filter(letter => letter !== '-').every(letter => guessedLetters.has(letter));
+  const guessed = wordLetters.filter(letter => !['-', ' '].includes(letter)).every(letter => guessedLetters.has(letter));
 
   if (guessed) {
     appContainer().innerHTML += '<div id="game-result" onclick="window.location.reload();">:-)</div>';

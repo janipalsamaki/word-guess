@@ -70,3 +70,7 @@ li {
   padding: 1em;
   cursor: pointer;
 }
+
+li.space {
+  border-width: 0 !important;
+}
