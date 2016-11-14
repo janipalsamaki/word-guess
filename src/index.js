@@ -73,7 +73,9 @@ function guessesLeftComponent(guessesLeft) {
 }
 
 function newWordComponent() {
-  return '<div id="new-word" onclick="window.location.reload();">Uusi sana</div>';
+  return `<div id="new-word" onclick="window.location.reload();">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </div>`;
 }
 
 function appContainer() {
