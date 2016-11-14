@@ -29,7 +29,8 @@ function hangman({word, maxGuesses = 5}) {
     alphabetComponent(),
     categoryComponent(category),
     wordComponent(word),
-    guessesLeftComponent(maxGuesses)
+    guessesLeftComponent(maxGuesses),
+    newWordComponent()
   ];
 
   appContainer().innerHTML = components.join('');
@@ -69,6 +70,10 @@ function wordComponent(word) {
 
 function guessesLeftComponent(guessesLeft) {
   return `<div id="guesses">${guessesLeft}</div>`;
+}
+
+function newWordComponent() {
+  return '<div id="new-word" onclick="window.location.reload();">Uusi sana</div>';
 }
 
 function appContainer() {

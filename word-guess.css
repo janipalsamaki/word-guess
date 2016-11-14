@@ -56,12 +56,19 @@ li {
   color: #5F4B01;
 }
 
-#guesses {
+#guesses, #new-word {
   padding: 1em;
   color: #5F4B01;
   background-color: #F9E8A8;
   text-align: center;
   margin: 1em 0 1em 0;
+}
+
+#new-word {
+  color: white;
+  background-color: #5F4B01;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 #game-result {
