@@ -47,6 +47,14 @@ const words = [
     category: 'Puut',
     words: ['Kuusi','Mänty','Koivu','Vaahtera','Tammi','Haapa','Pihlaja','Saarni','Tuomi']
   },
+  {
+    category: 'Ajoneuvot',
+    words: ['Linja-auto','Henkilöauto','Kuorma-auto','Moottoripyörä','Skootteri']
+  },
+  {
+    category: 'Urheilulajit',
+    words: ['Jalkapallo','Koripallo','Käsipallo','Lentopallo','Jääkiekko','Keihäänheitto','Salibandy','Kiekonheitto','Taitoluistelu','Mäkihyppy','Triathlon']
+  },
 ];
 
 export default words;
