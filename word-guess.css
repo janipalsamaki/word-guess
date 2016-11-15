@@ -31,9 +31,15 @@ li {
   cursor: pointer;
 }
 
+#alphabet li:hover {
+  transition: all 0.2s;
+  transform: rotate(-3deg) scale(1.1);
+}
+
 #alphabet li[disabled] {
   background-color: transparent;
   cursor: not-allowed;
+  transform: none;
 }
 
 #category {
