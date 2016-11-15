@@ -4,7 +4,7 @@ const maxGuesses = 5;
 let guessesLeft = maxGuesses;
 const category = randomCategory();
 const word = randomWord(category);
-const wordLetters = word.split('');
+const wordLetters = [...word];
 const guessedLetters = new Set();
 
 function randomCategory() {
@@ -41,7 +41,7 @@ function alphabetComponent(letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ') {
   return `
     <div id="alphabet">
       <ul>
-        ${letters.split('').map(letter => `<li class="${letter}">${letter}</li>`).join('')}
+        ${[...letters].map(letter => `<li class="${letter}">${letter}</li>`).join('')}
       </ul>
     </div>
 `;
@@ -55,7 +55,7 @@ function wordComponent(word) {
   return `
     <div id="word">
       <ul>
-        ${word.split('').map(letter => {
+        ${[...word].map(letter => {
           if (letter === '-') {
             return `<li disabled="disabled">${letter}</li>`;
           } else if (letter === ' ') {
